@@ -1,4 +1,4 @@
-/* -------------- Mise à zéro des styles ---------------- */
+/* -------------- Mise ï¿½ zï¿½ro des styles ---------------- */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
 table{border-collapse:collapse;border-spacing:0;}
 fieldset,img{border:0;}
@@ -24,7 +24,7 @@ body {
 	margin:auto;
 	width:990px;
 	height:237px;
-	background-image:url(../design/bg-bandeau.jpg);
+	/* background-image:url(../design/bg-bandeau.jpg); */
 }
 .clic {
 	float:left;
@@ -368,7 +368,7 @@ margin-right:20px;
 }
 
 #g3 LI.g3_folder {
-/*pour la galerie générale*/
+/*pour la galerie gï¿½nï¿½rale*/
 	/*background:URL(../design/lepidor-image-bordure.png) no-repeat center center;*/
 		width:220px;
 	/*border:none;*/
