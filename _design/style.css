@@ -11,6 +11,7 @@ abbr,acronym {border:0;}
 a {outline: none;}
 body {
 	background-image:url(../design/bg-body.gif);
+	
 	background-repeat:repeat-x;
 	font-family:arial;
 	font-size:13px;
@@ -18,6 +19,7 @@ body {
 #container {
 	margin:auto;
 	width:990px;
+
 	
 }
 #bandeau {
@@ -280,7 +282,7 @@ margin-left:60px;
 #footer-contenu {
 	margin:auto;
 	width:990px;
-	height:68px;
+
 }
 #footer-gauche {
 	float:left;
