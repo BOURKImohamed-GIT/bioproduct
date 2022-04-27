@@ -10,70 +10,222 @@
 <script type="text/javascript" src="https://lepidor.be/admin/includes/js/init.js"></script>
 <script type="text/javascript" src="https://lepidor.be/_includes/scripts/lightbox/js/lightbox.js"></script>
 <link rel="stylesheet" href="https://lepidor.be/_includes/scripts/lightbox/css/lightbox.css" type="text/css" media="screen" />
-<script src='https://lepidor.be/admin/includes/js/def.js' type='text/javascript'></script><link rel="stylesheet" href="https://lepidor.be/_includes/scripts/popup.css" type="text/css" />
+<script src='https://lepidor.be/admin/includes/js/def.js' type='text/javascript'></script>
+<link rel="stylesheet" href="https://lepidor.be/_includes/scripts/popup.css" type="text/css" />
 <script src='https://lepidor.be/_includes/scripts/flashobject.js' type='text/javascript'></script>
 <link rel='stylesheet' href='../_design/editor.css' />
 <link type="text/css" href="../_design/style.css" rel="stylesheet" media="screen" />
 <title>HEALTH-JAM - contact us &#63;</title>
 <meta name="keywords" content="">
-<meta name="description" content="">
 
-<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
 </head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 <style>
-
-
-#btn {
- background: #746247;
- height: 50px;
- min-width: 150px;
- border: none;
- border-radius: 10px;
- color: #eee;
- font-size: 40px;
- font-family: 'Cookie', cursive;
- position: relative;
- transition: 1s;
- -webkit-tap-highlight-color: transparent;
- display: flex;
- align-items: center;
- justify-content: center;
- cursor: pointer;
- padding-top: 5px;
-}
-
-#btn #circle {
- width: 5px;
- height: 5px;
- background: transparent;
- border-radius: 50%;
- position: absolute;
- top: 0;
- left: 50%;
- overflow: hidden;
- transition: 500ms;
-}
-
-.noselect {
- -webkit-touch-callout: none;
-   -webkit-user-select: none;
-	-khtml-user-select: none;
-	  -moz-user-select: none;
-	   -ms-user-select: none;
-		   user-select: none;
-}
-
-#btn:hover {
- background: transparent;
-}
-
-#btn:hover #circle {
- height: 50px;
- width: 150px;
- left: 0;
- border-radius: 0;
- border-bottom: 2px solid #eee;
-}
+	.stretch-card>.card {
+		width: 100%;
+		min-width: 100%
+	}
+   
+	body {
+		background-color: #f9f9fa
+	}
+   
+	.flex {
+		-webkit-box-flex: 1;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto
+	}
+   
+	@media (max-width:991.98px) {
+		.padding {
+			padding: 1.5rem
+		}
+	}
+   
+	@media (max-width:767.98px) {
+		.padding {
+			padding: 1rem
+		}
+	}
+   
+	.padding {
+		padding: 3rem
+	}
+   
+	.card {
+		box-shadow: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		-ms-box-shadow: none
+	}
+   
+	.card {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		min-width: 0;
+		word-wrap: break-word;
+		background-clip: border-box;
+		border: 1px solid #3da5f;
+		border-radius: 0
+	}
+   
+	.card .card-body {
+		padding: 1.25rem 1.75rem
+	}
+   
+	.card .card-title {
+		color: #000000;
+		margin-bottom: 0.625rem;
+		text-transform: capitalize;
+		font-size: 0.875rem;
+		font-weight: 500
+	}
+   
+	.card .card-description {
+		margin-bottom: .875rem;
+		font-weight: 400;
+		color: #76838f
+	}
+   
+	.btn.btn-social-icon {
+		width: 50px;
+		height: 50px;
+		padding: 0
+	}
+   
+	.template-demo>.btn {
+		margin-right: 0.5rem !important
+	}
+   
+	.template-demo {
+		margin-top: 0.5rem !important
+	}
+   
+	.btn.btn-rounded {
+		border-radius: 50px
+	}
+   
+	.btn-outline-facebook {
+		border: 1px solid #3b579d;
+		color: #3b579d
+	}
+   
+	.btn-outline-facebook:hover {
+		background: #3b579d;
+		color: #ffffff
+	}
+   
+	.btn-outline-youtube {
+		border: 1px solid #e52d27;
+		color: #e52d27
+	}
+   
+	.btn-outline-twitter {
+		border: 1px solid #2caae1;
+		color: #2caae1
+	}
+   
+	.btn-outline-dribbble {
+		border: 1px solid #ea4c89;
+		color: #ea4c89
+	}
+   
+	.btn-outline-linkedin {
+		border: 1px solid #0177b5;
+		color: #0177b5
+	}
+   
+	.btn-outline-instagram {
+		border: 1px solid #dc4a38;
+		color: #dc4a38
+	}
+   
+	.btn-outline-twitter:hover {
+		background: #2caae1;
+		color: #ffffff
+	}
+   
+	.btn-outline-linkedin:hover {
+		background: #0177b5;
+		color: #ffffff
+	}
+   
+	.btn-outline-youtube:hover {
+		background: #e52d27;
+		color: #ffffff
+	}
+   
+	.btn-outline-instagram:hover {
+		background: #e52d27;
+		color: #ffffff
+	}
+   
+	.btn-facebook {
+		background: #3b579d;
+		color: #ffffff
+	}
+   
+	.btn-youtube {
+		background: #e52d27;
+		color: #ffffff
+	}
+   
+	.btn-twitter {
+		background: #2caae1;
+		color: #ffffff
+	}
+   
+	.btn-dribbble {
+		background: #ea4c89;
+		color: #ffffff
+	}
+   
+	.btn-linkedin {
+		background: #0177b5;
+		color: #ffffff
+	}
+   
+	.btn-instagram {
+		background: #dc4a38;
+		color: #ffffff
+	}
+   
+	.btn-facebook:hover,
+	.btn-facebook:focus {
+		background: #2d4278;
+		color: #ffffff
+	}
+   
+	.btn-youtube:hover,
+	.btn-youtube:focus {
+		background: #c21d17;
+		color: #ffffff
+	}
+   
+	.btn-twitter:hover,
+	.btn-twitter:focus {
+		background: #1b8dbf;
+		color: #ffffff
+	}
+   
+	.btn-dribbble:hover,
+	.btn-dribbble:focus {
+		background: #e51e6b;
+		color: #ffffff
+	}
+   
+	.btn-linkedin:hover,
+	.btn-linkedin:focus {
+		background: #015682;
+		color: #ffffff
+	}
+   
+	.btn-instagram:hover,
+	.btn-instagram:focus {
+		background: #bf3322;
+		color: #ffffff
+	}
 </style>
 <body>
  <div id="container">
@@ -141,29 +293,20 @@
 <div align="center"><strong>
 <h1 class=""><font color="#68191C">contactez-nous <br />
 <em> </em><br />
-<div class='buttons-container'>
-	<div class='button facebook'>
-		<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-			<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-		  </svg>
-	</div>
-	<div class='button twitter'>
-		<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-			<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-		  </svg>
-	</div>
-	<div class='button github'>
-		<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
-			<path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
-		  </svg>
-	</div>
-	<div class='button instagram'>
-		<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-			<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-		  </svg>
-	</div>
+<div class="page-content page-container" id="page-content">
+    <div class="padding">
+        <div class="row container d-flex justify-content-center">
+            <div class="col-md-6 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
 
-  </div>
+                        <div class="template-demo"> <button type="button" class="btn btn-social-icon btn-facebook btn-rounded"><i class="bi bi-facebook"></i></button> <button type="button" class="btn btn-social-icon btn-youtube btn-rounded"><i class="bi bi-envelope-fill"></i></button> <button type="button" class="btn btn-social-icon btn-twitter btn-rounded"><i class="bi bi-twitter"></i></button> <button type="button" class="btn btn-social-icon btn-dribbble btn-rounded"><i class="bi bi-instagram"></i></button> <button type="button" class="btn btn-social-icon btn-linkedin btn-rounded"><i class="bi bi-linkedin"></i></button> <button type="button" class="btn btn-social-icon btn-instagram btn-rounded"><i class="bi bi-youtube"></i></button> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </em></strong></div>
 <em>
 <p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
@@ -221,6 +364,7 @@
 	  <!-- footer -->
  </div> <!-- container -->
 <style type="text/css">#neo_admin_overlay {display:none;z-index:1900000;top:0px;left:0px;position:absolute;opacity:0.5;background:black; }#neo_admin_overlay2 {display:none;z-index: 19000000; position:absolute; width:316px; height:300px; top:100px; font-size:12px; font-family: Verdana,Arial,sans-serif; } #neo_admin_overlay2 #neo_admin_overlay img, #neo_admin_overlay2 img { padding:0; margin:0; }#neo_admin_overlay2 td#neoLoginBoxRight, td#neoLoginBoxLeft { width: 5px; }#neo_admin_overlay2 td#neoLoginBoxCenter { width: 306px; background-color: #FFF; }#neo_admin_overlay2 td#neoLoginBoxRight { background: transparent url("../cdn2.artwhere.net/neocms/popup-right.png") repeat-y top left; }#neo_admin_overlay2 td#neoLoginBoxLeft { background: transparent url("../cdn2.artwhere.net/neocms/popup-left.png") repeat-y top right; }#neo_admin_overlay2 div#neoLoginTop { text-align: center; }#neo_admin_overlay2 #neoLoginBoxMain { border: 1px solid #e3e3e3; border-right:0; border-left:0; width:306px; background-color: #ececec; }#neo_admin_overlay2 #neoLoginBoxMain td { padding:2px; vertical-align: middle; text-align: left; font-size: 11px; color: #333; }#neo_admin_overlay2 #neoLoginBoxMain input { margin: 7px 0; border:1px solid #999999; background: #FFF; padding: 2px 0; font-size: 12px; }#neo_admin_overlay2 #neoLoginBoxMain input.button_neocms_loginbox, input.enter_neocms_loginbox { margin: 14px 0 7px 0; border:1px solid #999999; color:#595959; padding: 2px 0; background-color: #d4d0c8; height:auto; }#neo_admin_overlay2 input.enter_neocms_loginbox { width: 110px; }#neo_admin_overlay2 #neoLoginBoxMain .login_field_neocms_loginbox, .copyright_neocms_loginbox { text-align: center; }#neo_admin_overlay2 .copyright_neocms_loginbox { font-family:Trebuchet MS; font-size: 10px; color: #AAA; padding: 14px 20px 5px 20px; }#neo_admin_overlay2 .copyright_neocms_loginbox a:link, #neo_admin_overlay2 .copyright_neocms_loginbox a:visited { text-decoration: none; color: #AAA; font-size: 10px; font-weight: normal; }#neo_admin_overlay2 .copyright_neocms_loginbox a:hover, #neo_admin_overlay2 .copyright_neocms_loginbox a:active { text-decoration: underline; font-weight: normal; }</style><div id="neo_admin_overlay"></div><div id="neo_admin_overlay2"><img width="316" height="17" src="../cdn2.artwhere.net/neocms/popup-top.png" alt=""><table cellpadding="0" cellspacing="0"><tr><td id="neoLoginBoxLeft"></td><td id="neoLoginBoxCenter"><div id="neoLoginTop"><img src="../cdn2.artwhere.net/neocms/logo.html" width="199" height="36" alt="" style="margin:25px 0px 25px 0px;"></div><form name="neoLoginForm" class="neocms_loginbox" action="#" method="POST" onSubmit="neoCheckLogin(document.getElementById('neo_userName').value, document.getElementById('neo_password').value, document.getElementById('neoUserLanguage').value,  document.getElementById('remember_password').checked); document.getElementById('neo_password').value=''; return false;" >  <input type="hidden" name="auth" value="1"><table cellpadding="0" cellspacing="0" class="login_field_neocms_loginbox" id="neoLoginBoxMain"><tr><td width="35" height="40"></td><td width="124"></td><td width="110"></td><td width="37"></td></tr><tr><td></td><td>Login:</td><td><input id="neo_userName" name="userName" type="text" class="enter_neocms_loginbox"></td><td></td></tr><tr><td></td><td>Password:</td><td><input id="neo_password" name="userPassword" type="Password" class="enter_neocms_loginbox"><!--a href="#" onClick="parent.neoForgotPassword(); return false;">forgot</a--></td><td></td></tr><tr><td colspan="4" align="center"><div style="color: white; background-color: red; font-weight: bold; display:none; padding: 2px; text-align: center;" id="neoLoginWrongPassword">Authorization failed. User with this password does not exist</div></td></tr><tr><td></td><td>Remember password:</td><td><input type="checkbox" name="remember_password"  id="remember_password" value="checked"></td><td></td></tr><tr><td></td><td>Interface language:</td><td><select name="userLanguage" id="neoUserLanguage"><option selected value="en">English</option><option  value="fr">Fran&ccedil;ais</option><option  value="ru">Russian</option><option  value="nl">Nederlands</option></select>  </td><td></td></tr><tr><td></td><td style="text-align:left"><input class="button_neocms_loginbox" value="Close" type="button" onClick="closeNeocmsLogonWindow();"></td><td style="text-align:left"><input class="button_neocms_loginbox enter_neocms_loginbox" value="Enter" type="submit"  /></td><td></td></tr><tr><td colspan="4" align="center"><img height="10" width="10" src="../cdn2.artwhere.net/neocms/tiny_loading.gif" id="neoLoginLoadingIndicator" style="display: none;" alt="" /></td></tr><tr><td colspan="4" height="40"></td></tr></table><div class="login_field_neocms_loginbox" id="neoLoginBoxError" style="text-align:center;display: none;">      Please use <a href="http://getfirefox.com/">Firefox</a> browser for admin login.</div></form><div class="copyright_neocms_loginbox">ArtWhere offers you services in <a class='neoAdmin_copy'  href='http://www.artwhere.be/gestion-de-contenu'>Content Management System</a>, <a class='neoAdmin_copy'  href='http://www.artwhere.be/gestion-de-contenu/exclusivites-cms'>CMS</a>, <a class='neoAdmin_copy'  href='http://www.artwhere.be/services/graphisme'>Design</a>, <a class='neoAdmin_copy'  href='http://www.artwhere.be/services/referencement'>Web positioning</a> and <a class='neoAdmin_copy'  href='http://www.artwhere.be/services/hebergement'>Hosting</a> . &copy; <a class='neoAdmin_copy' href='http://artwhere.be/' target='_blank'>ArtWhere s.a.</a><a href="http://artwhere.be/" target="_blank">Neo-CMS</a> ver 1.99192 &copy <a href="http://artwhere.be/" target="_blank">ArtWhere s.a.</a></div></td><td id="neoLoginBoxRight"></td></tr></table><div style="margin-top:0px;height:23px;background:url(../cdn2.artwhere.net/neocms/popup-bottom.png)"></div></div></body>
-
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </html>
 
